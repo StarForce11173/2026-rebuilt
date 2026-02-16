@@ -46,24 +46,33 @@ public final class Constants {
     public static final double kBackRightChassisAngularOffset = Math.PI / 2;
 
     // SPARK MAX CAN IDs
-    public static final int kFrontLeftDrivingCanId = 6;
-    public static final int kRearLeftDrivingCanId = 7;
-    public static final int kFrontRightDrivingCanId = 8;
-    public static final int kRearRightDrivingCanId = 9;
+    public static final int kFrontLeftDrivingCanId = 9;
+    public static final int kRearLeftDrivingCanId = 8;
+    public static final int kFrontRightDrivingCanId = 6;
+    public static final int kRearRightDrivingCanId = 7;
 
-    public static final int kFrontLeftTurningCanId = 2;
-    public static final int kRearLeftTurningCanId = 3;
-    public static final int kFrontRightTurningCanId = 4;
-    public static final int kRearRightTurningCanId = 5;
+    public static final int kFrontLeftTurningCanId = 5;
+    public static final int kRearLeftTurningCanId = 4;
+    public static final int kFrontRightTurningCanId = 2;
+    public static final int kRearRightTurningCanId = 3 ;
 
     public static final boolean kGyroReversed = false;
   }
+  public static final class IntakeConstants {
+    public static final int kIntakeMotorCanId = 10;
+
+    public static final double kIntakeMotorCurrentLimit = 40;
+
+    public static final double kIntakeInSpeed = 1;
+    public static final double kIntakeOutSpeed = -1;
+    }
+
 
   public static final class ModuleConstants {
     // The MAXSwerve module can be configured with one of three pinion gears: 12T,
     // 13T, or 14T. This changes the drive speed of the module (a pinion gear with
     // more teeth will result in a robot that drives faster).
-    public static final int kDrivingMotorPinionTeeth = 14;
+    public static final int kDrivingMotorPinionTeeth = 13;
 
     // Calculations required for driving motor conversion factors and feed forward
     public static final double kDrivingMotorFreeSpeedRps = NeoMotorConstants.kFreeSpeedRpm / 60;
@@ -78,6 +87,7 @@ public final class Constants {
 
   public static final class OIConstants {
     public static final int kDriverControllerPort = 0;
+    public static final int kOperatorControllerPort = 1;
     public static final double kDriveDeadband = 0.05;
   }
 
